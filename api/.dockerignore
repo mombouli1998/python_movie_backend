@@ -1,0 +1,17 @@
+#Ignorer certains fichier dans l'image
+__pycache__/
+*.pyc 
+*.pyo
+#fichiers de logs
+*.logs
+#fichies de configuration d'environnement local
+.env
+#repertoire git
+.git
+.gitignore
+#fichier system
+.DS_Store
+#cache pip ou venv
+.venv/
+venv
+pip-wheel-metadata/

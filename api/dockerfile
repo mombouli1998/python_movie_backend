@@ -1,0 +1,13 @@
+# Utilise une image légère de python 3.10.12 comme base
+FROM python:3.10.12-slim
+# Définit le repertoire de travail dans le conteuner
+WORKDIR /app
+#Copie le fichier des dépendances dans le conteuner
+COPY requirements.txt .
+#Install les dépendances python sans mise en cache
+RUN pip install --no-cache-dir --upgrade -r requirements.txt
+# Copie tousles fichiers .py et le fichier .db dans le conteneur
+COPY . .
+# Lance le serveur Uvicorn pour executer l'API FastApi
+CMD ["uvicorn","main:app","--host","0.0.0.0","--port","8081"]
+
