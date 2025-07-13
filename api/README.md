@@ -139,7 +139,7 @@ Les contributions sont les bienvenues !
 
 ## Auteur
 
-Développé par [Josué AFOUDA](https://www.linkedin.com/in/josu%C3%A9-afouda/) en FastAPI.
+Développé par MOMBOULI Trinité en FastAPI.
 
 ---
 
